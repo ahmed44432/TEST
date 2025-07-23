@@ -201,7 +201,11 @@ public :
 		return _load_currency_info_from_file();
 	}
 
+	static float convert_currency_to_another(cls_currency C1, cls_currency C2, float amount) {
 
+	return (float)(amount * C2.rate()) / C1.rate();
+
+	}
 
 
 
