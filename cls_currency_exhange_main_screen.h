@@ -3,6 +3,10 @@
 #include <iostream>
 #include "cls_screen.h"
 #include "cls_input_validate.h"
+#include "cls_currency_list_screen.h"
+#include "cls_find_currency_screen.h"
+#include "cls_update_currency_rate_screen.h"
+#include "cls_currency_calculator_screen.h"
 #include "cls_util.h"
 #include <iomanip>
 
@@ -35,26 +39,26 @@ private:
 
     static void _show_currency_list_screen()
     {
-        cout << "\nCurrency List Screen Will Be Here.\n";
-   
+       //cout << "\nCurrency List Screen Will Be Here.\n";
+        cls_currency_list_screen::show_currency_list();
     }
 
     static void _show_find_currency_screen()
     {
-        cout << "\nFind Currency Screen Will Be Here.\n";
-
+       // cout << "\nFind Currency Screen Will Be Here.\n";
+        cls_find_currency_screen::show_find_currency_screen();
     }
 
     static void _show_update_rate_screen()
     {
-        cout << "\nUpdate Rate Screen Will Be Here.\n";
-
+        //cout << "\nUpdate Rate Screen Will Be Here.\n";
+        cls_update_currency_rate_screen::show_update_currency_rate_screen();
     }
 
     static void _show_currency_calculator_screen()
     {
-        cout << "\nCurrency Calculator Screen Will Be Here.\n";
-
+       // cout << "\nCurrency Calculator Screen Will Be Here.\n";
+        cls_currency_calculator_screen::show_update_currency_rate_screen();
     }
 
     static void _Go_back_to_currency_exhange_menue()
